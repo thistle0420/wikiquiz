@@ -4,7 +4,7 @@ import React from "react";
 
 async function getQuestionById(id: number) {
   const response = await fetch(
-    `https://45gls1rwcf.execute-api.ap-northeast-1.amazonaws.com/dev/questions/${id}`,
+    `https://45gls1rwcf.execute-api.ap-northeast-1.amazonaws.com/dev/questions/${id}?strlen=300`,
     {
       cache: "no-store",
     }
